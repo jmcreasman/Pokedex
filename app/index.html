@@ -6,12 +6,12 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 
-<body>
+<body ng-controller="DisplayPokemon as pokemon">
   <div><h1>Pokedex</h1></div>
   <div><h1>Search</h1></div>
   <div>
     <h1>Image</h1>
-    <h1>Name</h1>
+    <h1>{{pokemon.pokemon.kanto.name}}</h1>
     <h1>Number</h1>
   </div>
 </body>
