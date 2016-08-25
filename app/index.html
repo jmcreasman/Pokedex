@@ -9,10 +9,10 @@
 <body ng-controller="DisplayPokemon as pokemon">
   <div><h1>Pokedex</h1></div>
   <div><h1>Search</h1></div>
-  <div>
-    <h1>{{pokemon.product.image}}</h1>
-    <h1>{{pokemon.product.name}}</h1>
-    <h1>{{pokemon.product.number}}</h1>
+  <div ng-repeat="product in pokemon.products">
+    <h1>{{product.image}}</h1>
+    <h1>{{product.name}}</h1>
+    <h1>{{product.number}}</h1>
   </div>
 </body>
 
