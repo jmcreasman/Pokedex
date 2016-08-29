@@ -8,7 +8,7 @@
   var testpokemons = [{
     name: "Bulbasaur",
     number: 1,
-    image: "Coming Soon!"
+    image: "http://pkmn.net/sprites/yellow/1.PNG"
   }, {
     name: "Ivysaur",
     number: 2,
