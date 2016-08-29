@@ -1,17 +1,21 @@
 (function() {
   'use strict';
-  // angular.module('pokedex')
-  // .controller('DisplayPokemon', ['$http', function($http) {
-  //     var pokemon = this;
-  //
-  //     // pokemon.bio = [];
-  //
-  //     $http.get('../../pokemon.json')
-  //       .success(function(data) {
-  //         pokemon.pokemon = data;
-  //       })
-  //       .error(function(data, status) {
-  //         console.error('Repos error', status, data);
-  //       });
-  //   }]);
+  angular.module('nationalPokedex')
+    .controller('DisplayPokemon', function() {
+      this.products = testpokemons;
+    });
+
+  var testpokemons = [{
+    name: "Bulbasaur",
+    number: 1,
+    image: "Coming Soon!"
+  }, {
+    name: "Ivysaur",
+    number: 2,
+    image: "Coming Soon!"
+  }, {
+    name: "Venusaur",
+    number: 3,
+    image: "Coming Soon!"
+  }, ];
 }());
