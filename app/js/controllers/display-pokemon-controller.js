@@ -10,12 +10,12 @@
     number: 1,
     image: "images/pokemon/bulbasaur.png"
   }, {
-    name: "Ivysaur",
-    number: 2,
-    image: "Coming Soon!"
+    name: "Bulbasaur",
+    number: 1,
+    image: "images/pokemon/bulbasaur.png"
   }, {
-    name: "Venusaur",
-    number: 3,
-    image: "Coming Soon!"
+    name: "Bulbasaur",
+    number: 1,
+    image: "images/pokemon/bulbasaur.png"
   }, ];
 }());
