@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="app">
     Hello World
   </div>
 </template>
@@ -17,5 +17,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .app {
+    background: linear-gradient(-41deg, #2A354C 1%, #293951 41%, #09B9EE 100%);
+    height: 100vh;
+  }
 </style>
