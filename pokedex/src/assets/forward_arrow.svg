@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Back_Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sign_Up_Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.671591938">
+        <g id="Home-/-Dashboard" transform="translate(-332.000000, -261.000000)" fill="#FFFFFF">
+            <g id="Back_Arrow" transform="translate(337.500000, 270.500000) rotate(-180.000000) translate(-337.500000, -270.500000) translate(332.000000, 261.000000)">
+                <path d="M3.1726,9.2109 L10.1546,2.2289 C10.3826,1.9929 10.5226,1.6699 10.5226,1.3159 C10.5226,0.5889 9.9346,-0.0001 9.2076,-0.0001 C8.8536,-0.0001 8.5316,0.1409 8.2946,0.3689 L0.4016,8.2609 C0.1546,8.4999 0.0006,8.8359 0.0006,9.2069 C0.0006,9.5849 0.1546,9.9209 0.4026,10.1609 L8.2946,18.0529 C8.5336,18.2759 8.8546,18.4159 9.2076,18.4159 C9.9346,18.4159 10.5226,17.8269 10.5226,17.0999 C10.5226,16.7019 10.3446,16.3439 10.0646,16.1029 L3.1726,9.2109 Z" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

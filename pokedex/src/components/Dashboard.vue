@@ -7,42 +7,42 @@
       </h1>
       <div class="top-section message">
         <div class="widthOfContent">
-          <img class="icon" src="">
+          <img class="icon" src="../assets/notification.svg">
           <div class="column">
             <h2>06.14.17 - Message</h2>
             There is a payment due soon.
           </div>
         </div>
-        <img class="open-arrow" src="">
+        <img class="open-arrow" src="../assets/forward_arrow.svg">
       </div>
       <div class="top-section my-policy">
         <div class="widthOfContent">
-          <img class="icon" src="">
+          <img class="icon" src="../assets/my_policy.svg">
           <div class="column">
             <h2>My Policy</h2>
             1234567-XXXX
           </div>
         </div>
-        <img class="open-arrow" src="">
+        <img class="open-arrow" src="../assets/forward_arrow.svg">
       </div>
 
       <section>
         <button class="column left">
-          <img src="">
+          <img src="../assets/make_payment.svg">
           <span>Make A Payment</span>
         </button>
         <button class="column right">
-          <img src="">
+          <img src="../assets/payment_history.svg">
           <span>Payment History</span>
         </button>
       </section>
       <section>
         <button class="column left">
-          <img src="">
+          <img src="../assets/accident_help.svg">
           <span>Accident Help</span>
         </button>
         <button class="column right">
-          <img src="">
+          <img src="../assets/claim_history.svg">
           <span>Claim History</span>
         </button>
       </section>
