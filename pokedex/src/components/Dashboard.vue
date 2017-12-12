@@ -3,9 +3,9 @@
     <header>HEADER PLACEHOLDER</header>
     <div class="main">
       <h1>
-        Welcome back,<br> Trainer Red
+        Welcome back<br> Trainer Red
       </h1>
-      <div class="top-section message">
+      <!-- <div class="top-section message">
         <div class="widthOfContent">
           <img class="icon" src="../assets/notification.svg">
           <div class="column">
@@ -14,12 +14,12 @@
           </div>
         </div>
         <img class="open-arrow" src="../assets/forward_arrow.svg">
-      </div>
+      </div> -->
       <div class="top-section my-policy">
         <div class="widthOfContent">
           <img class="icon" src="../assets/my_policy.svg">
           <div class="column">
-            <h2>My Policy</h2>
+            <h2>Trainer Info</h2>
             1234567-XXXX
           </div>
         </div>
@@ -29,17 +29,17 @@
       <section>
         <button class="column left">
           <img src="../assets/make_payment.svg">
-          <span>Make A Payment</span>
+          <span>Pokedex</span>
         </button>
         <button class="column right">
           <img src="../assets/payment_history.svg">
-          <span>Payment History</span>
+          <span>Maps</span>
         </button>
       </section>
       <section>
         <button class="column left">
           <img src="../assets/accident_help.svg">
-          <span>Accident Help</span>
+          <span>Items</span>
         </button>
         <button class="column right">
           <img src="../assets/claim_history.svg">
