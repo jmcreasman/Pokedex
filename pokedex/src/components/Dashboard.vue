@@ -5,16 +5,6 @@
       <h1>
         Welcome back<br> Trainer Red
       </h1>
-      <!-- <div class="top-section message">
-        <div class="widthOfContent">
-          <img class="icon" src="../assets/notification.svg">
-          <div class="column">
-            <h2>06.14.17 - Message</h2>
-            There is a payment due soon.
-          </div>
-        </div>
-        <img class="open-arrow" src="../assets/forward_arrow.svg">
-      </div> -->
       <div class="top-section my-policy">
         <div class="widthOfContent">
           <img class="icon" src="../assets/my_policy.svg">
@@ -43,7 +33,7 @@
         </button>
         <button class="column right">
           <img src="../assets/claim_history.svg">
-          <span>Claim History</span>
+          <span>Notable Trainers</span>
         </button>
       </section>
     </div>
