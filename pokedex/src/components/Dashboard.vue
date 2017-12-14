@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <header>HEADER PLACEHOLDER</header>
+    <header-nav></header-nav>
     <div class="main">
       <h1>
         Welcome back<br> Trainer Red
@@ -45,6 +45,7 @@
 
 import Vue from 'vue';
 import router from '../router';
+import HeaderNav from '../components/HeaderNav.vue';
 
 export default {
   name: 'Dashboard',
@@ -52,6 +53,9 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+      HeaderNav
   }
 }
 </script>
