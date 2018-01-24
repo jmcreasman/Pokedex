@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <header-nav></header-nav>
+    <header-nav class="header-bar"></header-nav>
     <div class="main">
       <h1>
         Welcome back<br> Trainer Red
@@ -9,11 +9,10 @@
         <div class="widthOfContent">
           <img class="icon" src="../assets/my_policy.svg">
           <div class="column">
-            <h2>Trainer Info</h2>
+            <h2>Trainer ID Number</h2>
             1234567-XXXX
           </div>
         </div>
-        <img class="open-arrow" src="../assets/forward_arrow.svg">
       </div>
 
       <section>
@@ -37,7 +36,7 @@
         </button>
       </section>
     </div>
-    <footer class="footer">FOOTER PLACEHOLDER</footer>
+    <trainer-info class="footer-bar"></trainer-info>
   </div>
 </template>
 
@@ -46,6 +45,7 @@
 import Vue from 'vue';
 import router from '../router';
 import HeaderNav from '../components/HeaderNav.vue';
+import TrainerInfo from '../components/TrainerInfo.vue';
 
 export default {
   name: 'Dashboard',
@@ -55,7 +55,8 @@ export default {
     }
   },
   components: {
-      HeaderNav
+      HeaderNav,
+      TrainerInfo
   }
 }
 </script>
@@ -90,6 +91,17 @@ export default {
     position: absolute;
     overflow-y: scroll;
     overflow-x: visible;
+  }
+
+  .header-bar {
+    width: 100%;
+    /* animation: fadein 0.4s;
+    -webkit-animation: fadein 0.4s; */
+  }
+
+  .footer-bar {
+    position: absolute;
+    bottom: 0;
   }
 
   .invisible-scrollbar::-webkit-scrollbar {
@@ -230,15 +242,15 @@ export default {
   }
 
 /* For when working footer is complete */
-  /* #my-agent {
+  /* #trainer-info {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: red;
 
-    display: flex;
-    height: 90vh;
+    display: none;
+    height: 1vh;
     flex-direction: column;
     overflow: hidden;
   } */
