@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <header-nav class="header-bar"></header-nav>
+    <header-nav class="header-bar" dashboard="true"></header-nav>
     <div class="main">
       <h1>
         Welcome back<br> Trainer Red
@@ -35,6 +35,7 @@
           <span>Notable Trainers</span>
         </button>
       </section>
+
     </div>
     <trainer-info class="footer-bar"></trainer-info>
   </div>
@@ -49,6 +50,7 @@ import TrainerInfo from '../components/TrainerInfo.vue';
 
 export default {
   name: 'Dashboard',
+
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
