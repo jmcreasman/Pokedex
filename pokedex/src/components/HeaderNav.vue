@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="header-top" ref="scrollDiv">
-      <a class="back-arrow"><img src="../assets/back_arrow.svg"/></a>
-      <h4>title</h4>
+    <div class="header-top invisible-scrollbar" :class="{dashboard: dashboard}" ref="scrollDiv">
+      <a class="back-arrow" v-if="!dashboard"><img src="../assets/back_arrow.svg"/></a>
+      <h4 v-if="title">{{title}}</h4>
       <div class="header">
         <div id="nav-icon" @click=" collapsed = !collapsed, navIconClicked = true" v-bind:class="{'nav-icon-transition' : !collapsed }">
           <span></span>
@@ -41,6 +41,16 @@
 
   export default {
   name: 'HeaderNav',
+
+  props: {
+    title: {
+      type: String
+    },
+    dashboard: {
+      type: Boolean
+    },
+  },
+
   data () {
     return {
       collapsed: true,
@@ -55,7 +65,7 @@
     width: 100%;
     height: 70px;
     display: flex;
-    /* background-image: url("../assets/background_gradient.jpg"); */
+    background-image: url("../assets/background_gradient.jpg");
     position: relative;
   }
 
