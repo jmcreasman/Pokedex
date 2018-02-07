@@ -2,7 +2,7 @@
 <div class="app">
     <header-nav title="Pokédex"></header-nav>
     <div class="content-container">
-        <p class="info-text">If you have any questions please contact our customer service department at 888-888-8888.</p>
+        <p class="info-text">Some kind of intro text or something will go here. Copy needed.</p>
         <section>
             <div class="pokedexHeader">
                 <div class="pokedexNumber">#001</div>
@@ -10,10 +10,31 @@
                 <div class="pokedexType">Grass/Poison</div>
             </div>
             <div class="pokedexBody">
-                <div class="pokedexCategory">Seed Pokémon</div>
-                <div class="pokedexHeight">Height: 2'04"</div>
-                <div class="pokedexWeight">Weight 15.2 lbs.</div>
-                <div class="pokedexImage">Picture</div>
+                <div class="column-1">
+                    <div class="pokedexCategory">Seed Pokémon</div>
+                    <div class="pokedexHeight">Height: 2'04"</div>
+                    <div class="pokedexWeight">Weight 15.2 lbs.</div>
+                </div>
+                <div class="column-2">
+                    <img src="../assets/001Bulbasaur.png">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="pokedexHeader">
+                <div class="pokedexNumber">#001</div>
+                <div class="pokedexName">Bulbasaur</div>
+                <div class="pokedexType">Grass/Poison</div>
+            </div>
+            <div class="pokedexBody">
+                <div class="column-1">
+                    <div class="pokedexCategory">Seed Pokémon</div>
+                    <div class="pokedexHeight">Height: 2'04"</div>
+                    <div class="pokedexWeight">Weight 15.2 lbs.</div>
+                </div>
+                <div class="column-2">
+                    <img src="../assets/001Bulbasaur.png">
+                </div>
             </div>
         </section>
     </div>
@@ -69,10 +90,17 @@
         background-color: #9B9B9B;
         display: table;
     }
-    .pokedexName {
-        font-size: 18px;
+    .pokedexNumber {
+        font-size: 22px;
         color: #FFFFFF;
-        padding-left: 23px;
+        display: table-cell;
+        padding-left: 20px;
+        vertical-align: middle;
+        text-align: left;
+    }
+    .pokedexName {
+        font-size: 22px;
+        color: #FFFFFF;
         display: table-cell;
         vertical-align: middle;
         text-align: left;
@@ -89,19 +117,23 @@
     .pokedexBody {
         width: 100vw;
         height: 20.55vh;
-        text-align: left;
-        margin-left: 20px;
+    }
+    .column-1 {
+        width: 60vw;
+        float: left;
+    }
+    .column-2 {
+        margin-left: 60vw;
     }
     .pokedexCategory {
         font-size: 16px;
-        color: #9B9B9B;
+        color: #717171;
         padding-top: 20px;
         margin-bottom: 0px;
     }
     .pokedexHeight {
         font-size: 16px;
-        color: #717171;
-        font-weight: bold;
+        color: #9B9B9B;
         margin-top: 7px;
         margin-bottom: 14px;
     }
@@ -110,5 +142,11 @@
         color: #9B9B9B;
         margin-top: 0px;
         margin-bottom: 30px;
+    }
+    .pokedexImage {
+    }
+    img {
+        height: 128px;
+        width: 128px;
     }
 </style>
