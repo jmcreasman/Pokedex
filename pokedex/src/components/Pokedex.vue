@@ -2,7 +2,7 @@
 <div class="app">
     <header-nav title="Pokédex"></header-nav>
     <div class="content-container">
-        <p class="info-text">Some kind of intro text or something will go here. Copy needed.</p>
+        <p class="info-text">Silph Co in collaboration with Professor Samuel Oak proudly present the Pokédex; a handheld electronic encyclopedia device capable of recording and retaining information of any Pokémon encountered. Soon to be an invaluable tool to all Trainers in the Pokémon world!</p>
         <section>
             <div class="pokedex-header">
                 <div class="pokedex-number">#001</div>
