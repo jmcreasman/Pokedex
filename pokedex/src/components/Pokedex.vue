@@ -4,33 +4,17 @@
     <div class="content-container">
         <p class="info-text">Some kind of intro text or something will go here. Copy needed.</p>
         <section>
-            <div class="pokedexHeader">
-                <div class="pokedexNumber">#001</div>
-                <div class="pokedexName">Bulbasaur</div>
-                <div class="pokedexType">Grass/Poison</div>
+            <div class="pokedex-header">
+                <div class="pokedex-number">#001</div>
+                <div class="pokedex-name">Bulbasaur</div>
+                <div class="pokedex-type">Grass/Poison</div>
             </div>
-            <div class="pokedexBody">
+            <div class="pokedex-body">
                 <div class="column-1">
-                    <div class="pokedexCategory">Seed Pokémon</div>
-                    <div class="pokedexHeight">Height: 2'04"</div>
-                    <div class="pokedexWeight">Weight 15.2 lbs.</div>
-                </div>
-                <div class="column-2">
-                    <img src="../assets/001Bulbasaur.png">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="pokedexHeader">
-                <div class="pokedexNumber">#001</div>
-                <div class="pokedexName">Bulbasaur</div>
-                <div class="pokedexType">Grass/Poison</div>
-            </div>
-            <div class="pokedexBody">
-                <div class="column-1">
-                    <div class="pokedexCategory">Seed Pokémon</div>
-                    <div class="pokedexHeight">Height: 2'04"</div>
-                    <div class="pokedexWeight">Weight 15.2 lbs.</div>
+                    <div class="pokedex-category">Seed Pokémon</div>
+                    <div class="pokedex-total-base-stats">Total Base Stats: 318</div>
+                    <div class="pokedex-height">Height: 2'04"</div>
+                    <div class="pokedex-weight">Weight 15.2 lbs.</div>
                 </div>
                 <div class="column-2">
                     <img src="../assets/001Bulbasaur.png">
@@ -84,13 +68,13 @@
         text-align: center;
     }
 
-    .pokedexHeader {
+    .pokedex-header {
         width: 100vw;
         height: 6.25vh;
         background-color: #9B9B9B;
         display: table;
     }
-    .pokedexNumber {
+    .pokedex-number {
         font-size: 22px;
         color: #FFFFFF;
         display: table-cell;
@@ -98,14 +82,14 @@
         vertical-align: middle;
         text-align: left;
     }
-    .pokedexName {
+    .pokedex-name {
         font-size: 22px;
         color: #FFFFFF;
         display: table-cell;
         vertical-align: middle;
         text-align: left;
     }
-    .pokedexType {
+    .pokedex-type {
         font-size: 22px;
         color: #FFFFFF;
         padding-right: 25px;
@@ -114,7 +98,7 @@
         text-align: right;
     }
 
-    .pokedexBody {
+    .pokedex-body {
         width: 100vw;
         height: 20.55vh;
     }
@@ -125,25 +109,31 @@
     .column-2 {
         margin-left: 60vw;
     }
-    .pokedexCategory {
+    .pokedex-category {
         font-size: 16px;
         color: #717171;
         padding-top: 20px;
+        padding-left: 15px;
         margin-bottom: 0px;
     }
-    .pokedexHeight {
+    .pokedex-total-base-stats {
         font-size: 16px;
         color: #9B9B9B;
         margin-top: 7px;
-        margin-bottom: 14px;
+        padding-left: 15px;
     }
-    .pokedexWeight {
+    .pokedex-height {
         font-size: 16px;
         color: #9B9B9B;
         margin-top: 0px;
-        margin-bottom: 30px;
+        padding-left: 15px;
     }
-    .pokedexImage {
+    .pokedex-weight {
+        font-size: 16px;
+        color: #9B9B9B;
+        margin-top: 0px;
+        padding-left: 15px;
+        margin-bottom: 30px;
     }
     img {
         height: 128px;
