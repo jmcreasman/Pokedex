@@ -16,8 +16,8 @@
       </div>
 
       <section>
-        <button v-on:click="navigateTo('/pokedex')" class="column left">
-          <img src="../assets/make_payment.svg">
+        <button class="column left">
+          <router-link to="/pokedex"><img src="../assets/make_payment.svg"></router-link>
           <span>Pokedex</span>
         </button>
         <button class="column right">
@@ -51,12 +51,7 @@ import Pokedex from '../components/Pokedex.vue';
 
 export default {
   name: 'Dashboard',
-
-  data: function () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
+  
   methods: {
     navigateTo(path) {
       router.push(path);

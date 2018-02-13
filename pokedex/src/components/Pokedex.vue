@@ -34,13 +34,8 @@
     export default {
     name: 'Pokedex',
 
-    data () {
-        return {
-        }
-    },
-
     components: {
-      HeaderNav,
+        HeaderNav,
     }
 }
 </script>
