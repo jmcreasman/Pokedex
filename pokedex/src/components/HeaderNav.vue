@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header-top invisible-scrollbar" :class="{dashboard: dashboard}" ref="scrollDiv">
-      <a class="back-arrow" v-if="!dashboard"><img src="../assets/back_arrow.svg"/></a>
+      <a v-on:click="back" class="back-arrow" v-if="!dashboard"><img src="../assets/back_arrow.svg"/></a>
       <h4 v-if="title">{{title}}</h4>
       <div class="header">
         <div id="nav-icon" @click=" collapsed = !collapsed, navIconClicked = true" v-bind:class="{'nav-icon-transition' : !collapsed }">
@@ -15,19 +15,19 @@
       <div class="nav-flyout-circle" v-bind:class="{'nav-flyout-grow' : !collapsed }"></div>
       <div>
         <div class="nav-flyout-links-primary">
-          <a class="nav-flyout-menu-item-1" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Message Center</a>
-          <a class="nav-flyout-menu-item-2" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">My Policy</a>
-          <a class="nav-flyout-menu-item-3" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Make A Payment</a>
-          <a class="nav-flyout-menu-item-4" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Payment History</a>
-          <a class="nav-flyout-menu-item-5" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">File A Claim</a>
-          <a class="nav-flyout-menu-item-6" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Claims</a>
+          <a class="nav-flyout-menu-item-1" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-2" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-3" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-4" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-5" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-6" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
         </div>
         <div class="nav-flyout-menu-break" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }"></div>
         <div class="nav-flyout-links-secondary">
-          <a class="nav-flyout-menu-item-7" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">FAQ</a>
-          <a class="nav-flyout-menu-item-8" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Settings</a>
-          <a class="nav-flyout-menu-item-9" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Legal</a>
-          <a class="nav-flyout-menu-item-10" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">Sign Out</a>
+          <a class="nav-flyout-menu-item-7" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-8" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-9" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
+          <a class="nav-flyout-menu-item-10" v-bind:class="{'fade-in' : !collapsed, 'fade-out' : collapsed && navIconClicked }">???</a>
         </div>
       </div>
     </div>
@@ -51,12 +51,20 @@
     },
   },
 
-  data () {
+  data: function () {
     return {
       collapsed: true,
       navIconClicked: false,
     }
-  }
+  },
+  methods: {
+    navigateTo(path) {
+      router.push(path);
+    },
+    back() {
+      this.$router.go(-1);
+    },
+  },
 }
 </script>
 
